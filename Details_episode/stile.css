@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'rick';
+    src: url('../Font/get_schwifty.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'rick';
+    font-weight: 1000;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+.mastery{
+    width: 100%;
+}
+
+/*Details contenedor */
+.son-mastery-details{
+    height: 60vh;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/*Details contenedor left*/
+.son-mastery-details .son-master-left{
+    width: 100%;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.son-mastery-details .son-master-left .episode-image-cont{
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.son-mastery-details .son-master-left .episode-image-cont img{
+    width: 80%;
+    transition: .9s;
+}.son-mastery-details .son-master-left .episode-image-cont img:hover{
+    width: 100%;
+}
+
+.son-mastery-details .son-master-left .episode-title-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}.son-mastery-details .son-master-left .episode-title-cont h1{
+    font-size: 50px;
+    color: #ff1e00;
+    transition: .6s;
+    -webkit-text-stroke: 0.1px #c83bd8;
+}.son-mastery-details .son-master-left .episode-title-cont h1:hover{
+    text-shadow: 0px -2px 30px #c83bd8;
+    font-size: 60px;
+}
+
+/*Details contenedor right */
+.son-mastery-details .son-master-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}.son-mastery-details .son-master-right .episode-details{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}.son-mastery-details .son-master-right .episode-details h3{
+    color: #04B0C8;
+    -webkit-text-stroke: 0.1px #37C427;
+    transition: .6s;
+}.son-mastery-details .son-master-right .episode-details h3:hover{
+    text-shadow: 0px -2px 30px rgba(51,255,51,1);
+    font-size: 40px;
+}
+
+
+
+
+
+
+/*Characters contenedor */
+.son-mastery-characters{
+    height: 40vh;
+    width: 100%;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.son-mastery-characters .characters-image-cont{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
